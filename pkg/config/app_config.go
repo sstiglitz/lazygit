@@ -82,9 +82,9 @@ func NewAppConfig(name, version, commit, date string, buildSource string, debugg
 }
 
 func ConfigDir() string {
-	envConfigDir := os.Getenv("CONFIG_DIR")
-	if envConfigDir != "" {
-		return envConfigDir
+	envConfigDirectory := os.Getenv("CONFIG_DIR")
+	if envConfigDirectory != "" {
+		return envConfigDirectory
 	}
 
 	// chucking my name there is not for vanity purposes, the xdg spec (and that
